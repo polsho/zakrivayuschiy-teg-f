@@ -7,8 +7,8 @@
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" />
-    <link rel="apple-touch-icon" href="./images/apple-icon-152x152.png" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./images/apple-icon.png" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -18,6 +18,12 @@
   </head>
   <body class="page">
     <header class="header">
+      <h1 class="header__logo">
+        &lt/html&gt
+      </h1>
+      <p class="header__title">
+        закрывающий тег
+      </p>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -45,7 +51,11 @@
       </nav>
     </header>
     <main>
-
+      <section class="content">
+        <svg>
+          <use href="./svg/icons.svg#floppy">
+        </svg>
+      </section>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

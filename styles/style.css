@@ -17,4 +17,18 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wgth' var(--main-font-wgth);
+}
+
+.header {
+  font-family: var(--accent-font), monospace;
+}
+
+.header__logo {
+  text-transform: uppercase;
+}
+
+.header__title {
+
 }
