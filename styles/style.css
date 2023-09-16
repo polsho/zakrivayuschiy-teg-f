@@ -33,7 +33,7 @@
 .header {
   border: 2px solid var(--text-color);
   background-color: var(--bg-color);
-  margin: 102px auto 104px;
+  margin: 102px auto 104px;    /* относительные единицы? */
   text-align: center;
   font-family: var(--accent-font), monospace;
 }
@@ -62,7 +62,8 @@
   margin: 0 auto;
 }
 
-.theme-menu__button {
+.theme-menu__button,
+.button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -82,3 +83,72 @@
   position: absolute;
   inset-inline-start: -1em;
 }
+
+.content {
+  margin: 0 auto;
+}
+
+.content__card {
+  border: 2px solid var(--text-color);
+  font-size: 1.125rem;
+  background-color: var(--bg-color);
+  margin-block-end: 54px;
+}
+
+.content__card-title {
+  max-inline-size: 80%;
+  padding: 5px 10px;
+  font-size: inherit;
+  font-weight: var(--title-font-wght);
+  line-height: 1.2;
+}
+
+.content__card-image {
+  inline-size: 100%;
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+}
+
+.content__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1.5624rem;  /* слева отступ больше */
+}
+
+.content__icons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding: 1.5624rem;
+}
+
+.card__like-button {
+  padding: 9px 27px;
+  border: 2px solid var(--text-color);
+}
+
+.button__text {
+  font-size: 0.875rem;
+  font-family: var(--accent-font);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.footer {
+  max-inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  margin: 0 auto 102px;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  border: 2px solid var(--text-color);
+  padding: 15px 20px;
+
+}
+
