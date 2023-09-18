@@ -14,6 +14,7 @@
   --text-color: #00CC14;
   --main-font-wght: 465;
   --title-font-wght: 785;
+  --text-stroke-color: #000;
 }
 
 :root.theme-light {
@@ -23,6 +24,7 @@
   repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
   linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --text-color: #000;
+  --text-stroke-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +37,7 @@
     --text-color: #00CC14;
     --main-font-wght: 465;
     --title-font-wght: 785;
+    --text-stroke-color: #000;
   }
 
 
