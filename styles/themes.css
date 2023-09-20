@@ -15,6 +15,7 @@
   --main-font-wght: 465;
   --title-font-wght: 785;
   --text-stroke-color: #000;
+  --button-text-color: #00CC14;
 }
 
 :root.theme-light {
@@ -25,6 +26,7 @@
   linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --text-color: #000;
   --text-stroke-color: #fff;
+  --button-text-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +40,7 @@
     --main-font-wght: 465;
     --title-font-wght: 785;
     --text-stroke-color: #000;
+    --button-text-color: #00CC14;
   }
 
 

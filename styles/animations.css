@@ -13,20 +13,13 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: .6;
-  }
-}
 
-@keyframes underline-scale {
-  0% {
-    transform:scaleX(0);
+
+@keyframes arow-moving {
+  from {
+    inset-inline-start: -1.25rem;
   }
-  100% {
-    transform:scaleX(1);
+  to {
+    inset-inline-start: -1.5rem;
   }
 }
