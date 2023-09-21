@@ -16,6 +16,8 @@
   --title-font-wght: 785;
   --text-stroke-color: #000;
   --button-text-color: #00CC14;
+  --heart-contour-color: #00CC14;
+  --heart-fill: #FF0000;
 }
 
 :root.theme-light {
@@ -27,6 +29,8 @@
   --text-color: #000;
   --text-stroke-color: #fff;
   --button-text-color: #fff;
+  --heart-contour-color: #000;
+  --heart-fill: #FF0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +45,8 @@
     --title-font-wght: 785;
     --text-stroke-color: #000;
     --button-text-color: #00CC14;
+    --heart-contour-color: #00CC14;
+    --heart-fill: #FF0000;
   }
 
 

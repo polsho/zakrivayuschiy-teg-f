@@ -124,6 +124,16 @@
   margin: 100px auto;
 }
 
+.content-button {
+  font-size: 0.875rem;
+  font-family: var(--accent-font), monospace;
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--button-text-color);
+  box-shadow: 2px 2px 0 transparent;
+  transition: box-shadow 0.3s ease;
+}
+
 .content__card {
   border: 2px solid var(--text-color);
   font-size: 1.125rem;
@@ -206,12 +216,65 @@
   transition: border .3s ease;
 }
 
+.sparks {
+  opacity: 0;
+}
+
+.core {
+  fill: transparent;
+  transition: fill .3s linear 0.03s;
+}
+
+.like-icon:hover .core {
+  fill: var(--heart-contour-color);
+  transition: fill .3s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill .3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--heart-contour-color);
+  transition: fill .3s linear 0.05s;
+}
+
+.like-icon:active .core,
+.like-icon:active .main-body {
+  fill: var(--heart-fill);
+  transition: fill .3s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-fill);
+  transition: fill .3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-fill);
+  transition: fill .3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill);
+  transition: fill .3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-scale .3s ease-in .1s 2 alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-appearance .3s ease-in .3s 2 alternate;
+}
+
 .card__like-button {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 35px 9px;
+  padding: 12px 17px 9px;
   border: 2px solid var(--text-color);
   box-shadow: 2px 2px 0 transparent;
   transition: box-shadow 0.3s ease;
@@ -241,6 +304,10 @@
   line-height: 0.9;
   color: var(--button-text-color);
   mix-blend-mode: difference;
+}
+
+.card__like-button .button__text {
+  inline-size: 6.93em;
 }
 
 .floppy {
@@ -277,6 +344,39 @@
   transform: scaleX(1);
   transform-origin: left;
   transition: transform .5s ease-in-out;
+}
+
+.popup-save {
+  inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.popup-save::backdrop {
+  opacity: 0.75;
+  background-color: #000;
+}
+
+.popup-save__content {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.popup-save__floppy {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.popup-save__text {
+  font-family: var(--accent-font);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
+
+.popup-save__button {
+  text-transform: uppercase;
 }
 
 

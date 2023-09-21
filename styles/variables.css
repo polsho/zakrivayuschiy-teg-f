@@ -13,4 +13,6 @@
   --title-font-wght: 700;
   --text-stroke-color: #fff;
   --button-text-color: #fff;
+  --heart-contour-color: #000;
+  --heart-fill: #FF0000;
 }
