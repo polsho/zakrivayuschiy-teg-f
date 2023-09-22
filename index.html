@@ -60,7 +60,7 @@
             </h2>
             <div class="content__card-image-wrapper">
               <img
-                src="./images/automobile-small.png"
+                src="./images/automobile.png"
                 alt="Фургон с открытым окном на фоне ночного неба. Рисунок."
                 class="content__card-image"
               >
@@ -68,25 +68,26 @@
                 &lt/html&gt
               </span>
             </div>
-            <div class="content__card-text">
-              <p>
-                Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу.
-                И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
-              </p>
-              <p>
-                Место для ваших воспоминаний о начале обучения.
-              </p>
-            </div>
-            <div class="content__icons">
-              <button type="button" class="button card__icon-button">
-                <svg
+            <div class="content__card-content">
+              <div class="content__card-text">
+                <p>
+                  Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу.
+                  И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+                </p>
+                <p>
+                  Место для ваших воспоминаний о начале обучения.
+                </p>
+              </div>
+              <div class="content__icons">
+                <button type="button" class="button card__icon-button">
+                  <svg
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
-                >
+                  >
                   <g class="heart">
                     <path d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12
                     18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30
@@ -109,18 +110,19 @@
                 </svg>
 
               </button>
-              <button type="button" class="card__like-button button">
+              <button type="button" class="card__like-button button content__button">
                 <span class="button__text">
                   Like
                 </span>
               </button>
+            </div>
             </div>
           </article>
         </li>
       </ul>
       <button
         type="button"
-        class="content__save-button button"
+        class="content__save-button button content__button"
         onclick="window['save-as-memory'].showModal()"
         aria-controls="save-as-memory"
       >
@@ -136,18 +138,22 @@
         id="save-as-memory"
       >
         <div class="popup-save__content">
-          <svg class="popup-save__floppy" viewBox="0 0 28 28">
-            <use href="./svg/icons.svg#floppy">
-          </svg>
+          <div class="popup-save__floppy-wrapper">
+            <svg class="popup-save__floppy" viewBox="0 0 28 28">
+              <use href="./svg/icons.svg#floppy">
+            </svg>
+          </div>
           <p class="popup-save__text">
-            Вставьте дискету, чтобы продолжить
+            Вставьте<br> дискету, чтобы продолжить
           </p>
         </div>
         <button
           type="submit"
           onclick="window['save-as-memory'].close()"
-          class="button content-button popup-save__button"
-          >ok</button>
+          class="button content__button popup-save__button"
+          >
+            <span class="button__text">ok</span>
+          </button>
     </dialog>
     </main>
     <script src="./scripts/like.js"></script>
