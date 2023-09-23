@@ -11,7 +11,7 @@
   font-family: 'Inter';
   font-weight: 400 785;
   src:
-    url('../fonts/Inter-Variable.woff2') format('woff supports variantion'),
-    url('../fonts/Inter-Variable.woff2') format('woff-variantion');
+    url('../fonts/Inter-Variable.woff2') format('woff2 supports variantion'),
+    url('../fonts/Inter-Variable.woff2') format('woff2-variantion');
   font-display: swap;
 }

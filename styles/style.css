@@ -178,23 +178,23 @@
 }
 
 .path {
-  filter: contrast(150%);
+  filter: contrast(1.5);
 }
 
 .flowers {
-  filter: saturate(160%);
+  filter: saturate(1.6);
 }
 
 .on_the_top {
-    filter: brightness(80%);
+    filter: contrast(1.8);
 }
 
 .rose {
-  filter: sepia(70%);
+  filter: sepia(0.7);
 }
 
 .monkeys {
-  filter: grayscale(70%) brightness(170%);
+  filter: grayscale(0.7) brightness(1.7);
   object-position: center;
 }
 
@@ -204,7 +204,7 @@
 }
 
 .quay {
-  filter: brightness(180%);
+  filter: brightness(1.8);
 }
 
 .hourglass {
