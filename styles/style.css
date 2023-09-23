@@ -43,7 +43,7 @@
 .header {
   border: 2px solid var(--text-color);
   background-color: var(--bg-color);
-  margin: 100px auto;    /* относительные единицы? */
+  margin: 100px auto;
   font-family: var(--accent-font), monospace;
   text-align: center;
   text-transform: uppercase;
@@ -133,7 +133,6 @@
 }
 
 .content__card-title {
-  max-inline-size: 80%;
   padding: 5px 10px;
   font-size: inherit;
   font-variation-settings: 'wgth' var(--title-font-wght);
@@ -169,14 +168,48 @@
   }
 }
 
-.content__card-image {   /* сделать через picture */
+.content__card-image {
   display: block;
   inline-size: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
-  object-position: right;
   border-block-start: 2px solid var(--text-color);
   border-block-end: 2px solid var(--text-color);
+}
+
+.path {
+  filter: contrast(150%);
+}
+
+.flowers {
+  filter: saturate(160%);
+}
+
+.on_the_top {
+    filter: brightness(80%);
+}
+
+.rose {
+  filter: sepia(70%);
+}
+
+.monkeys {
+  filter: grayscale(70%) brightness(170%);
+  object-position: center;
+}
+
+.headphones {
+  filter: hue-rotate(90deg);
+  object-position: right;
+}
+
+.quay {
+  filter: brightness(180%);
+}
+
+.hourglass {
+  filter: blur(2px);
+  object-position: top;
 }
 
 .content__card-content {
@@ -313,7 +346,7 @@
 }
 
 .floppy {
-  inline-size: 28px;  /* задать через clamp? */
+  inline-size: 28px;
   block-size: 28px;
   mix-blend-mode: difference;
 }
