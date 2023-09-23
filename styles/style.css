@@ -135,7 +135,7 @@
 .content__card-title {
   padding: 5px 10px;
   font-size: inherit;
-  font-variation-settings: 'wgth' var(--title-font-wght);
+  font-variation-settings: 'wgth' var(--title-font-wgth);
   line-height: 1.2;
 }
 
