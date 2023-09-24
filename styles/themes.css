@@ -12,8 +12,8 @@
     repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px),
     linear-gradient(#007f0c, #004306);
   --text-color: #00CC14;
-  --main-font-wgth: 465;
-  --title-font-wgth: 785;
+  --main-font-wght: 465;
+  --title-font-wght: 785;
   --text-stroke-color: #000;
   --button-text-color: #00CC14;
   --heart-contour-color: #00CC14;
@@ -27,8 +27,8 @@
   repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
   linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --text-color: #000;
-  --main-font-wgth: 400;
-  --title-font-wgth: 700;
+  --main-font-wght: 400;
+  --title-font-wght: 700;
   --text-stroke-color: #fff;
   --button-text-color: #fff;
   --heart-contour-color: #000;
@@ -43,8 +43,8 @@
       repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px),
       linear-gradient(#007f0c, #004306);
     --text-color: #00CC14;
-    --main-font-wgth: 465;
-    --title-font-wgth: 785;
+    --main-font-wght: 465;
+    --title-font-wght: 785;
     --text-stroke-color: #000;
     --button-text-color: #00CC14;
     --heart-contour-color: #00CC14;
