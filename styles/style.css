@@ -50,6 +50,7 @@
 }
 
 .header__logo {
+  display: block;
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
